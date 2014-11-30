@@ -1,0 +1,19 @@
+{
+    "appKeys": {},
+    "capabilities": [
+        ""
+    ],
+    "companyName": "alessandro.baffa@gmail.com",
+    "longName": "TimeZones",
+    "projectType": "native",
+    "resources": {
+        "media": []
+    },
+    "shortName": "TimeZones",
+    "uuid": "1014a075-fde5-4d81-a29e-c1445fb6ef83",
+    "versionCode": 1,
+    "versionLabel": "1.0",
+    "watchapp": {
+        "watchface": true
+    }
+}

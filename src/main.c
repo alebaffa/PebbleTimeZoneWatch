@@ -55,12 +55,12 @@ static void main_window_load(Window *window) {
   GRect bounds = layer_get_bounds(window_layer);
   
   // Create first city TextLayer
-  s_first_city_name = text_layer_create(GRect(0, 5, bounds.size.w, bounds.size.h));
+  s_first_city_name = text_layer_create(GRect(0, 2, bounds.size.w, bounds.size.h));
   text_layer_set_background_color(s_first_city_name, GColorClear);
   text_layer_set_text_color(s_first_city_name, GColorBlack);
   text_layer_set_text(s_first_city_name, "Nice");
   // Improve the layout to be more like a watchface
-  text_layer_set_font(s_first_city_name, fonts_get_system_font(FONT_KEY_GOTHIC_18));
+  text_layer_set_font(s_first_city_name, fonts_get_system_font(FONT_KEY_GOTHIC_28_BOLD));
   text_layer_set_text_alignment(s_first_city_name, GTextAlignmentCenter);
   
   // Create first city time TextLayer
@@ -77,11 +77,11 @@ static void main_window_load(Window *window) {
   text_layer_set_text_color(s_second_city_name, GColorClear);
   text_layer_set_text(s_second_city_name, "Tokyo");
   // Improve the layout to be more like a watchface
-  text_layer_set_font(s_second_city_name, fonts_get_system_font(FONT_KEY_GOTHIC_18));
+  text_layer_set_font(s_second_city_name, fonts_get_system_font(FONT_KEY_GOTHIC_28_BOLD));
   text_layer_set_text_alignment(s_second_city_name, GTextAlignmentCenter);
   
     // Create second city time TextLayer
-  s_second_time_layer = text_layer_create(GRect(0, 99, bounds.size.w, bounds.size.h));
+  s_second_time_layer = text_layer_create(GRect(0, 109, bounds.size.w, bounds.size.h));
   text_layer_set_background_color(s_second_time_layer, GColorBlack);
   text_layer_set_text_color(s_second_time_layer, GColorClear);
   // Improve the layout to be more like a watchface
@@ -109,6 +109,7 @@ static void main_window_unload(Window *window) {
 
 static void tick_handler(struct tm *tick_time, TimeUnits units_changed) {
   update_time();
+  update_second_time();
 }
   
 static void init() {

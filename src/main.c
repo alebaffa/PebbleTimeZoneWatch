@@ -29,7 +29,7 @@ static void update_time() {
 
 static void update_second_time() {
   // Get a tm structure
-  time_t temp = time(NULL) + 25200; 
+  time_t temp = time(NULL) + 25200; // hardcoded timezone difference. To be changed.
   struct tm *second_tick_time = localtime(&temp);
 
   // Create a long-lived buffer

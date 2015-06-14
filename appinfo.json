@@ -7,8 +7,15 @@
     "longName": "TimeZones",
     "projectType": "native",
     "resources": {
-        "media": []
+        "media": [
+            {
+                "file": "fonts/perfect-dos-vga.ttf",
+                "name": "FONT_PERFECT_DOS_48",
+                "type": "font"
+            }
+        ]
     },
+    "sdkVersion": "2",
     "shortName": "TimeZones",
     "uuid": "1014a075-fde5-4d81-a29e-c1445fb6ef83",
     "versionCode": 1,
